@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS inventory_items;
+DROP TABLE IF EXISTS inventories;
+DROP TABLE IF EXISTS movements;
+DROP TABLE IF EXISTS document_items;
+DROP TABLE IF EXISTS documents;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS categories;
+DROP TABLE IF EXISTS users;
