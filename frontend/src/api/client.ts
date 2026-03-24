@@ -8,7 +8,6 @@ async function request<T>(path: string, options?: RequestInit): Promise<T> {
   })
 
   if (res.status === 401) {
-    window.location.href = '/login'
     throw new Error('Не авторизован')
   }
 
