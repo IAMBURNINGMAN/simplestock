@@ -63,7 +63,6 @@ func main() {
 	docH := handler.NewDocumentHandler(docRepo)
 	invH := handler.NewInventoryHandler(invRepo)
 	dashH := handler.NewDashboardHandler(pool)
-	exportH := handler.NewExportHandler(pool)
 
 	// Router
 	r := chi.NewRouter()
@@ -116,11 +115,8 @@ func main() {
 		r.Post("/api/inventories/{id}/items", invH.AddItem)
 		r.Post("/api/inventories/{id}/complete", invH.Complete)
 
-		// Dashboard & Reports
+		// Dashboard
 		r.Get("/api/dashboard/summary", dashH.Summary)
-		r.Get("/api/reports/stock", dashH.StockReport)
-		r.Get("/api/reports/turnover", dashH.TurnoverReport)
-		r.Get("/api/reports/export/excel", exportH.ExportExcel)
 	})
 
 	// Server
