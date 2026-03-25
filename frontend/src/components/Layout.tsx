@@ -8,7 +8,6 @@ import {
   ArrowUpFromLine,
   ClipboardCheck,
   History,
-  BarChart3,
   LogOut,
 } from 'lucide-react'
 
@@ -19,7 +18,6 @@ const navItems = [
   { path: '/outgoing', label: 'Расход', icon: ArrowUpFromLine },
   { path: '/inventory', label: 'Инвентаризация', icon: ClipboardCheck },
   { path: '/movements', label: 'История', icon: History },
-  { path: '/reports', label: 'Отчёты', icon: BarChart3 },
 ]
 
 export function Layout() {

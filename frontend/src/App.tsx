@@ -8,7 +8,6 @@ import DocumentForm from '@/pages/DocumentForm'
 import DocumentDetail from '@/pages/DocumentDetail'
 import InventoryPage from '@/pages/InventoryPage'
 import Movements from '@/pages/Movements'
-import Reports from '@/pages/Reports'
 
 export default function App() {
   return (
@@ -25,7 +24,6 @@ export default function App() {
         <Route path="/outgoing/:id" element={<DocumentDetail />} />
         <Route path="/inventory" element={<InventoryPage />} />
         <Route path="/movements" element={<Movements />} />
-        <Route path="/reports" element={<Reports />} />
       </Route>
     </Routes>
   )
