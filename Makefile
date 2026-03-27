@@ -12,6 +12,8 @@ backend-dev:
 frontend-dev:
 	cd frontend && npm run dev
 
+
+
 # Docker
 up:
 	docker compose up --build -d

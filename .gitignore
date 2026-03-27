@@ -11,6 +11,8 @@ frontend/dist/
 .vscode/
 *.swp
 
+
+
 # OS
 .DS_Store
 Thumbs.db
